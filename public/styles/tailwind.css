@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        --primary-text-color: 4 32 64;
+        --secondary-text-color: 122 134 154;
+        --bg-light-blue-color: 249 250 251;
+        --black-color: 0 0 0;
+        --gray-500-color: 158 158 158;
+        --gray-50-color: 250 250 250;
+        --amber-700-color: 255 160 0;
+        --amber-500-color: 255 193 7;
+        --amber-50-color: 255 193 7;
+        --orange-700-color: 245 124 0;
+        --orange-500-color: 255 152 0;
+        --orange-50-color: 255 243 224;
+        --red-700-color: 211 47 47;
+        --red-500-color: 244 67 54;
+        --red-50-color: 255 235 238;
+        --green-500-color: 76 175 80;
+        --green-50-color: 232 245 233;
+        --blue-A700-color:41 98 255;
+        --blue-700-color:25 118 210;
+        --blue-500-color:33 150 243;
+        --blue-100-color:187 222 251;
+        --blue-50-color: 227 242 253;
+        --lime-700-color: 205 220 57;
+        --lime-500-color: 205 220 57;
+        --lime-50-color: 249 251 231;
+        --info-color: 0 145 234;
+    }
+}
+
+@layer components {
+    .circle {
+        position: relative;
+        background: theme('colors.green.500');
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+    }
+
+    .checkmark {
+        position: absolute;
+        transform: rotate(45deg) translate(-50%, -50%);
+        left: 20%;
+        top: 50%;
+        height: 9px;
+        width: 5px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+
+    .text-xxs {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+    }
+}
